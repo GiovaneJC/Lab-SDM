@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+ 
 void main() {
   runApp(
     Center(
       child: Text(
-        'Olá, Mundo!',
+        'Olá, Giovane!',
         textDirection: TextDirection.ltr,
-        style: TextStyle(
-          color: Colors.red,
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    ),
+      ), //Text.
+    ), //Center.
   );
 }
