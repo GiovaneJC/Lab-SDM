@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
-void main() {
-  runApp(
-    Center(
-      child: Text(
-        'Olá, Mundo!',
-        textDirection: TextDirection.ltr,
-        style: TextStyle(
-          color: Colors.red,
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    ),
-  );
+
+class Pessoa {
+  String nome;
+  String? curso;
+
+Pessoa({required this.nome, required this.curso});
+
+void imprimir(){
+   print('$nome: $curso');
+  }
+ }
+
+void main(){
+  Pessoa pessoa = new Pessoa(nome: 'Giovane', curso: 'SI');
+  pessoa.imprimir();
+
+  pessoa = new Pessoa(nome: 'Paulin', curso: 'Arquitetura');
+  pessoa.imprimir();
+
 }
+
